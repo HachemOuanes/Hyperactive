@@ -1,0 +1,49 @@
+.bar {
+    position: fixed;
+    width: 99%;
+    height: 2.2rem;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 1rem 1rem 0 0;
+    align-items: center;
+    background-color: #282120;
+    padding-left: 1rem;
+}
+
+.drag {
+    width: 100%;
+    height: 100%;
+    color: black;
+    -webkit-app-region: drag;
+}
+
+.bar-button {
+    all: unset;
+    padding: .4rem;
+    margin: .4rem;
+    border-radius: 20rem;
+}
+
+.close {
+    background-color: #ED695E;
+}
+
+.close:hover {
+    background-color: #f03827;
+}
+
+.fullscreen {
+    background-color: #F4BF4F;
+}
+
+.fullscreen:hover {
+    background-color: #fbff00;
+}
+
+.minimize {
+    background-color: #61C554;
+}
+
+.minimize:hover {
+    background-color: #25f809;
+}

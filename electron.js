@@ -4,14 +4,19 @@ const path = require('path');
 const { app, BrowserWindow } = require('electron');
 const isDev = require('electron-is-dev');
 
+
 function createWindow() {
     // Create the browser window.
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 1000,
+        height: 800,
         webPreferences: {
             nodeIntegration: true,
         },
+        // img : path.join(__dirname, './assets/logo.png'),
+        autoHideMenuBar: true,
+        frame: false,
+        transparent: true
     });
 
     // and load the index.html of the app.
