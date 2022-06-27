@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/App.css'
 import StatusBar from './StatusBar';
+import Main from './Main';
 
 
 const App: React.FC = () => {
@@ -8,9 +9,7 @@ const App: React.FC = () => {
   return (
     <div className='main'>
       <StatusBar />
-      <div className='main-app'>
-        <h1>Boulhech Electron App</h1>
-      </div>
+      <Main />
     </div>
   );
 }

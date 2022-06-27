@@ -5,13 +5,3 @@
     align-items: center;
 }
 
-.main-app {
-    background: rgba(122, 122, 122, 0.7);
-    transform: translateY(2.2rem);
-    width: 100%;
-    height: 45rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
