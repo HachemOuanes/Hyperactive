@@ -1,11 +1,12 @@
 // ./public/electron.js
 const path = require('path');
-
+const electron = require('electron')
 const { app, BrowserWindow } = require('electron');
 const isDev = require('electron-is-dev');
-
+const globalShortcut = electron.globalShortcut;
 
 function createWindow() {
+
     // Create the browser window.
     const win = new BrowserWindow({
         width: 1000,
@@ -18,8 +19,12 @@ function createWindow() {
         // img : path.join(__dirname, './assets/logo.png'),
         autoHideMenuBar: true,
         frame: false,
-        transparent: true
+        // transparent: true
     });
+
+    globalShortcut.register('f5', function () {
+        win.reload()
+    })
 
     // and load the index.html of the app.
     // win.loadFile("index.html");
